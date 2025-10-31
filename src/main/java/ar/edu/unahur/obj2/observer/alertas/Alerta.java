@@ -1,8 +1,9 @@
 package ar.edu.unahur.obj2.observer.alertas;
 
+
 public class Alerta {
-    private String descripcion;
-    private Integer nivel;
+    private final String descripcion;
+    private final Integer nivel;
 
     public Alerta(String descripcion, Integer nivel) {
         this.descripcion = descripcion;
