@@ -13,6 +13,6 @@ public class RiesgoPromedio implements IRiesgo{
     
     public Integer calcularPromedio(List<Alerta> alertas){
         Integer promedio = alertas.stream().mapToInt(Alerta :: getNivel).sum() / alertas.size();
-        return promedio;
+        return Integer.valueOf(promedio);
     }
 }

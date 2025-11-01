@@ -19,6 +19,6 @@ public class RiesgoCritico implements IRiesgo{
     private Integer calcularUltimoAlerta(List<Alerta> alertas){
         Alerta ultimaAlerta = alertas.getLast();
         Integer nivel = ultimaAlerta.getNivel();
-        return ultimaAlerta.esCritica() ? 10 : (int)nivel;
+        return ultimaAlerta.esCritica() ? 10 : Integer.valueOf(nivel);
     }
 }

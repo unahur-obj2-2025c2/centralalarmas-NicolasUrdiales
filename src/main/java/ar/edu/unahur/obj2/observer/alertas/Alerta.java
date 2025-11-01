@@ -2,20 +2,20 @@ package ar.edu.unahur.obj2.observer.alertas;
 
 
 public class Alerta {
-    private final String descripcion;
+    private final String tipo;
     private final Integer nivel;
 
-    public Alerta(String descripcion, Integer nivel) {
-        this.descripcion = descripcion;
+    public Alerta(String tipo, Integer nivel) {
+        this.tipo = tipo;
         this.nivel = nivel;
     }
 
     public Boolean esCritica(){
-        return nivel >= 8;
+        return Boolean.valueOf(nivel >= 8);
     }
 
     public String getDescripcion() {
-        return descripcion;
+        return tipo;
     }
 
     public Integer getNivel() {
